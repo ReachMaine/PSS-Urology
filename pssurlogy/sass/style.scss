@@ -1,0 +1,35 @@
+/*
+Theme Name: PSS Urology
+Description: This is a child theme for PSS Urology
+Author: Reachmaine
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.7.6
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+@import "partials/print"; 
+ 
+/* =Theme customization starts here */
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+
+
+
+/*   content stuff */
+.entry-content {
+	ul {
+		list-style-position: inside;
+	}
+}
+.pss-shaded-backgound {
+	background-color: #ffe7d5;
+}
