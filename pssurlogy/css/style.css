@@ -29,3 +29,10 @@ aside.widget.widget_recent_entries li {
 
 .pss-shaded-backgound {
   background-color: #ffe7d5; }
+
+.pss-close-bottom {
+  margin-bottom: 0px; }
+
+.pss-boxed-content {
+  border: 1px solid #56486d;
+  padding: 10px; }

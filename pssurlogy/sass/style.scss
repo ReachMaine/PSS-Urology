@@ -33,3 +33,12 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 .pss-shaded-backgound {
 	background-color: #ffe7d5;
 }
+.pss-close-bottom {
+	margin-bottom: 0px;
+}
+
+
+.pss-boxed-content {
+	border: 1px solid $boxed-border;
+	padding: 10px; // give some breathing room
+}
