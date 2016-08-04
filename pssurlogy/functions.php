@@ -37,8 +37,8 @@
 	function my_login_logo() { ?>
 		<style type="text/css">
 			body.login div#login h1 a {
-				background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/mdih-admin-img.png);
-				padding-bottom: 30px;
+				background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/admin-img.png);
+				padding-bottom: 100px;
 				background-size: contain;
 				margin-left: 0px;
 				margin-bottom: 0px;
