@@ -1,4 +1,3 @@
-@import url("../flatsome/css/foundation.css");
 /*
 Theme Name: PSS Urology
 Description: This is a child theme for PSS Urology
@@ -7,6 +6,7 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 2.7.6
 */
+@import url("../flatsome/css/foundation.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
 /* Welcome to Compass. Use this file to define print styles.
@@ -23,16 +23,59 @@ Version: 2.7.6
 aside.widget.widget_recent_entries li {
   padding-bottom: 15px; }
 
+/* header */
+#masthead #logo {
+  width: 123px !important; }
+  #masthead #logo a {
+    padding-top: 0px; }
+    #masthead #logo a img {
+      max-height: 130px; }
+
 /*   content stuff */
 .entry-content ul {
   list-style-position: inside; }
 
 .pss-shaded-backgound {
-  background-color: #ffe7d5; }
+  background-color: rgba(255, 221, 90, 0.6); }
 
 .pss-close-bottom {
   margin-bottom: 0px; }
 
 .pss-boxed-content {
   border: 1px solid #56486d;
-  padding: 10px; }
+  padding: 10px;
+  background-color: rgba(255, 221, 90, 0.4); }
+
+figure.wp-caption {
+  border: none;
+  background: none; }
+  figure.wp-caption img {
+    border: 1px solid #999;
+    box-shadow: 5px 5px 5px #999; }
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+/* Foundation Block Grids for above small breakpoint */
+/***************------------- 15. MOBILE -------------*****************/
+@media only screen and (max-width: 48em) {
+  #masthead {
+    height: inherit !important; }
+    #masthead .header-container {
+      display: block; }
+    #masthead #right-logo-phone {
+      display: block; }
+      #masthead #right-logo-phone .eai-right-image {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none; } }
+/* Medium Displays: 768px - 1279px */
+/* Styles for screens that are atleast 768px; */
+/* Large Displays: 1280px - 1440px */
+@media only screen and (min-width: 80em) {
+  ul.header-nav li {
+    margin-left: 30px; }
+    ul.header-nav li a {
+      font-size: 110% !important; } }
+/* X-Large Displays: 1400px and up */
+/* breakpoints for ux_banners */
