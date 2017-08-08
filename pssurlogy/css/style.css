@@ -31,6 +31,9 @@ aside.widget.widget_recent_entries li {
     #masthead #logo a img {
       max-height: 130px; }
 
+#site-navigation > li {
+  line-height: 1.4em; }
+
 /*   content stuff */
 .entry-content ul {
   list-style-position: inside; }

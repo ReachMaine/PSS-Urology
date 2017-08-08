@@ -6,13 +6,13 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 2.7.6
 */
- 
+
 @import url("../flatsome/css/foundation.css");
 @import "partials/settings";
-@import "partials/print"; 
- 
+@import "partials/print";
+
 /* =Theme customization starts here */
-.from_the_blog_comments { // hide comments on blog shortcode 
+.from_the_blog_comments { // hide comments on blog shortcode
 	display: none;
 	visibility: hidden;
 }
@@ -32,6 +32,10 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 			max-height: 130px;
 		}
 	}
+}
+
+#site-navigation > li {
+  line-height: 1.4em;
 }
 
 /*   content stuff */
