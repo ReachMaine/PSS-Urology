@@ -1,0 +1,69 @@
+/*
+Theme Name: PSS Urology, Inc
+Description: This is a child theme for PSS Urology
+Author: Reachmaine
+Author URI: http: //www.reachmaine.com/
+Template: oshin
+Version: 1.0
+*/
+
+@import url("../oshin/style.css");
+@import "partials/settings";
+@import "partials/print";
+
+/* =Theme customization starts here */
+.from_the_blog_comments { // hide comments on blog shortcode
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+
+/* header */
+
+#masthead #logo{
+	width: 123px !important;
+	a {
+		padding-top: 0px;
+		img {
+			max-height: 130px;
+		}
+	}
+}
+
+#site-navigation > li {
+  line-height: 1.4em;
+}
+
+/*   content stuff */
+.entry-content {
+	ul {
+		list-style-position: inside;
+	}
+}
+.pss-shaded-backgound {
+	background-color: rgba( 255, 221, 90, 0.6);
+}
+.pss-close-bottom {
+	margin-bottom: 0px;
+}
+
+.pss-boxed-content {
+	border: 1px solid $boxed-border;
+	padding: 10px; // give some breathing room
+	background-color: rgba( 255, 221, 90, 0.4);
+}
+
+figure.wp-caption {
+	border: none;
+	background: none;
+	img {
+		border: 1px solid #999;
+		box-shadow: 5px 5px 5px #999;
+	}
+}
+
+@import "partials/media" ;
