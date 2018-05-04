@@ -1,18 +1,18 @@
 <?php
-	require_once(get_stylesheet_directory().'/custom/language.php'); 
-	// require_once(get_stylesheet_directory().'/custom/woocommerce.php'); 
+	require_once(get_stylesheet_directory().'/custom/language.php');
+	require_once(get_stylesheet_directory().'/custom/woocommerce.php');
 
 
-	add_action('after_setup_theme', ea_setup);
+	add_action('after_setup_theme', 'ea_setup');
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
-	* 
+	*
 	*/
 	function ea_setup() {
 	 /* do stuff ehre. */
 	 /* add_filter( 'image_size_names_choose', 'ea_custom_sizes' ); // choose image size in media drop down. */
 		//reach_woo_setup();
-	 
+
 	}
 	add_image_size('reach_featured_image', 750, 350, false);
 	function ea_custom_sizes( $sizes ) {
@@ -29,10 +29,10 @@
 	function mysite_opengraph_image_size($val) {
 		return 'facebook_share';
 	}
-	
-		// contact form 7 fallback for date field 
+
+		// contact form 7 fallback for date field
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
-	
+
 	/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">

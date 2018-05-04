@@ -1,0 +1,10 @@
+pss-boxed-content
+	border and yellow background
+	used on:  rows
+
+pss-figure-shadow  
+	puts border and shadow on image 
+	on: <img>
+
+pss-shaded-backgound
+	yellow background

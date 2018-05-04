@@ -1,4 +1,4 @@
-<?php 
+<?php
 /* woocommerce */
 	add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
 
@@ -13,11 +13,11 @@
 	}
 	// remove sku from product details.
 	add_filter( 'wc_product_sku_enabled', '__return_false' );
-	
-// if want to remove ordering from product archive page.
-// flatsome uses it's own actions for ordering & filtering, so need to do after_theme setup. 
-	function reach_woo_setup() {
-		// remove "showing all 10 results" & default sorting
-		remove_action( 'ux_woocommerce_navigate_products', 'woocommerce_result_count', 20 );
- 		remove_action( 'ux_woocommerce_navigate_products', 'woocommerce_catalog_ordering', 30 );	
-	}
+
+	// Remove the sorting dropdown from Woocommerce
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
+// Remove the result count from WooCommerce
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
+
+// remove related products from single products
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );

@@ -8,7 +8,27 @@ Version: 1.0
 */
 @import url("../oshin/style.css");
 /* Colors ---------------------------------------------- */
+/* settings ------------------------------------------ */
+.left-sidebar-page,
+.right-sidebar-page,
+.no-sidebar-page,
+#content.no-sidebar-page #content-wrap,
+.no-sidebar-page #content-wrap,
+#content #content-wrap.no-page-builder,
+.portfolio-archives.no-sidebar-page #content-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+ul li, ol li {
+  margin-bottom: 0px; }
+
 /* Typography ------------------------------------------ */
+/*  styling for woocommerce --------------------- */
+.product .woocommerce-tabs {
+  padding-top: 30px; }
+  .product .woocommerce-tabs ul.wc-tabs {
+    border: 0px; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
@@ -52,9 +72,20 @@ aside.widget.widget_recent_entries li {
 figure.wp-caption {
   border: none;
   background: none; }
-  figure.wp-caption img {
-    border: 1px solid #999;
-    box-shadow: 5px 5px 5px #999; }
+
+.wp-caption img.pss-figure-shadow,
+.pss-figure-shadow,
+figure.wp-caption img {
+  border: 1px solid #999;
+  box-shadow: 5px 5px 5px #999; }
+
+#footer .footer-left-area,
+#footer .footer-right-area {
+  color: #ddd; }
+  #footer .footer-left-area a,
+  #footer .footer-right-area a {
+    color: #ddd;
+    font-weight: bold; }
 
 /* ===================================================== */
 /* Media Queries --------------------------------------- */

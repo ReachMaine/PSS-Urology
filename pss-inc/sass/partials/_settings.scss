@@ -3,11 +3,26 @@
 $linkcolor: #a62425;
 $titleFontColor: #a62425;
 $facebook_blue: #3a589d;
-// Background colors: 
+// Background colors:
 
-$bkgoundContent: #FFFFFF; // 
+$bkgoundContent: #FFFFFF; //
 $menuBarbkg: #D14719; //
 
 $primary:  #56486d ; // set in theme options
 $boxed-border: #56486d; // used by pss-boxed-content
+/* settings ------------------------------------------ */
+.left-sidebar-page,
+.right-sidebar-page,
+.no-sidebar-page,
+#content.no-sidebar-page #content-wrap,
+.no-sidebar-page #content-wrap, 
+#content #content-wrap.no-page-builder,
+.portfolio-archives.no-sidebar-page #content-wrap {
+  padding-top: 30px; // these are usually 80 and look much to airy for me.
+  padding-bottom: 30px;
+}
+
+ul li, ol li {
+  margin-bottom: 0px; // again too airy
+}
 /* Typography ------------------------------------------ */

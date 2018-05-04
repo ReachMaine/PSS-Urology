@@ -9,6 +9,7 @@ Version: 1.0
 
 @import url("../oshin/style.css");
 @import "partials/settings";
+@import "partials/woo";
 @import "partials/print";
 
 /* =Theme customization starts here */
@@ -60,10 +61,22 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 figure.wp-caption {
 	border: none;
 	background: none;
-	img {
-		border: 1px solid #999;
-		box-shadow: 5px 5px 5px #999;
+}
+.wp-caption img.pss-figure-shadow,
+.pss-figure-shadow,
+figure.wp-caption img {
+	border: 1px solid #999;
+	box-shadow: 5px 5px 5px #999;
+}
+// footer
+#footer {
+	.footer-left-area,
+	.footer-right-area {
+		color: #ddd;
+		a {
+			color: #ddd;
+			font-weight: bold;
+		}
 	}
 }
-
 @import "partials/media" ;
