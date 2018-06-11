@@ -29,6 +29,13 @@ ul li, ol li {
   .product .woocommerce-tabs ul.wc-tabs {
     border: 0px; }
 
+/*  styling for contact form 7  */
+.wpcf7 .wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+  color: #56486d;
+  background-color: white;
+  font-weight: bold;
+  border: 1px solid #56486d; }
+
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */

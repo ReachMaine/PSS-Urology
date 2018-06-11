@@ -1,0 +1,9 @@
+/*  styling for contact form 7  */
+$cf7-success-color: #56486d;
+
+.wpcf7 .wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+	color: $cf7-success-color;
+  background-color: white;
+	font-weight: bold;
+  border: 1px solid $cf7-success-color;
+}
