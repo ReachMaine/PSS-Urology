@@ -98,6 +98,16 @@ figure.wp-caption img {
 /* Media Queries --------------------------------------- */
 /* ===================================================== */
 /* Foundation Block Grids for above small breakpoint */
+@media only screen and (min-width: 961px) {
+  #navigation #menu li.menu-item-has-children a:after {
+    content: "\f107";
+    padding-left: 4px;
+    font-family: FontAwesome;
+    color: rgba(41, 49, 137, 0.5); }
+  #navigation #menu ul.sub-menu {
+    top: 65%;
+    background-color: white;
+    border: 2px solid rgba(41, 49, 137, 0.16); } }
 /***************------------- 15. MOBILE -------------*****************/
 @media only screen and (max-width: 48em) {
   #masthead {
